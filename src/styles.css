@@ -1,0 +1,90 @@
+/* General body styling */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #e5ddd5; /* WhatsApp-like background */
+    color: #333;
+  }
+  
+  /* WhatsApp interface container */
+  .whatsapp-interface {
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+  }
+  
+  /* Heading styling */
+  .whatsapp-interface h2 {
+    font-size: 20px;
+    color: #075e54; /* WhatsApp green */
+    margin-bottom: 20px;
+  }
+  
+  /* Join group button */
+  .whatsapp-interface button {
+    background-color: #25d366; /* WhatsApp green button color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  /* Button hover effect */
+  .whatsapp-interface button:hover {
+    background-color: #20b354;
+  }
+  
+  /* Live location tracking */
+  .live-location {
+    width: 100%;
+    max-width: 400px;
+    margin: 10px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    text-align: center;
+    color: #333;
+    border: 1px solid #ddd;
+  }
+  
+  /* Styling for the page title */
+  .page-title {
+    text-align: center;
+    font-size: 24px;
+    color: #075e54;
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  
+  /* Add responsive styling */
+  @media (max-width: 600px) {
+    .whatsapp-interface {
+      padding: 15px;
+      margin: 20px auto;
+    }
+  
+    .whatsapp-interface h2 {
+      font-size: 18px;
+    }
+  
+    .whatsapp-interface button {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  
+    .live-location {
+      padding: 10px;
+    }
+  }
+  
