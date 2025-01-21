@@ -1,70 +1,111 @@
-# Getting Started with Create React App
+```markdown
+# 🌍 Live Location Tracker 🚀  
+A **React.js** application to simulate a WhatsApp-like group interface where users can join via a link, enable location sharing, and save their latitude and longitude to Firebase in real time. It also includes a feature for live location tracking for a specific time span.  
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+## ⚡ Features  
+- 🖼️ **WhatsApp-like Interface**: Simple and user-friendly UI for interaction.  
+- 📍 **Location Prompt**: Requests location permission when the user clicks the group link.  
+- 🛰️ **Real-Time Location Tracking**: Tracks and saves user coordinates to Firebase every 10 seconds for 5 minutes.  
+- 🔄 **State Management**: Handled efficiently with Redux for seamless updates.  
+- 🌐 **Firebase Integration**: Stores user location data securely in Firestore.  
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🛠️ Tech Stack  
+- **Frontend**: React.js with Redux for state management.  
+- **Database**: Firebase Firestore for real-time data storage.  
+- **Deployment**: Hosted on Vercel for a globally accessible web app.  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🚀 Installation and Setup  
+1. Clone the repository:  
+   ```bash
+   git clone https://github.com/AlankrithaS/live_location_tracker.git
+   cd live_location_tracker
+   ```
+2. Install dependencies:  
+   ```bash
+   npm install
+   ```
+3. Set up Firebase:  
+   - Add the following keys in your `.env` file (replace with your Firebase credentials):  
+     ```env
+     REACT_APP_API_KEY=your_api_key
+     REACT_APP_AUTH_DOMAIN=your_auth_domain
+     REACT_APP_PROJECT_ID=your_project_id
+     ```  
+   - Update `firebase.js` with environment variables.  
+4. Start the development server:  
+   ```bash
+   npm start
+   ```
+5. Open the app at `http://localhost:3000`.  
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 📂 Project Structure  
+```
+geo-tracker/
+│
+├── public/               # Public files (HTML, icons, etc.)
+├── src/                  # Application source code
+│   ├── components/       # UI components
+│   ├── redux/            # State management with Redux
+│   ├── styles/           # CSS files
+│   └── firebase.js       # Firebase configuration
+│
+├── .gitignore            # Ignored files for Git
+├── package.json          # Project dependencies
+└── README.md             # Project documentation
+```
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## ✨ Usage  
+1. **Joining the Group**:  
+   - The user receives a link like "Join School WhatsApp Group."  
+   - On clicking, the app prompts for location permissions.  
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. **Location Tracking**:  
+   - After granting permission, the app saves the user's real-time coordinates to Firebase Firestore.  
+   - Tracking continues every 10 seconds for 5 minutes.  
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. **Live Location Sharing (Optional)**:  
+   - Future implementation: Stream location for hours or days.  
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🛡️ Security  
+- Environment variables (`.env`) are used to secure Firebase API keys.  
+- Location data is stored securely in Firestore.  
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🌟 Deployment on Vercel  
+1. Push the code to GitHub.  
+2. Link the repository to Vercel.  
+3. Add Firebase environment variables on the Vercel dashboard.  
+4. Deploy the project and enjoy your hosted app!  
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## 🧑‍💻 Contributions  
+Contributions are welcome! Feel free to fork the repo, create a new branch, and submit a PR.  
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 📝 License  
+This project is licensed under the MIT License.  
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 📷 Screenshots  
+![ui](https://github.com/user-attachments/assets/52abe5d2-98fa-4e96-9c4f-19179da1a487)
+![backend](https://github.com/user-attachments/assets/36ac4032-054b-4501-b35d-5cff8a275baa)
 
-### Analyzing the Bundle Size
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
