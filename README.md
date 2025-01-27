@@ -16,7 +16,7 @@ A **React.js** application to simulate a WhatsApp-like group interface where use
 ## 🛠️ Tech Stack  
 - **Frontend**: React.js with Redux for state management.  
 - **Database**: Firebase Firestore for real-time data storage.  
-- **Deployment**: Hosted on Vercel for a globally accessible web app.  
+- **Deployment**: Hosted on Vercel for a globally accessible web-app.  
 
 ---
 
